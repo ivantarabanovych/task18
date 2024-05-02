@@ -30,3 +30,11 @@ img {
     width: 240px;
     height: 120px;
 }
+
+.block1 {
+    filter: blur(2px) opacity(.7) grayscale(.7);
+}
+
+.content{
+    filter: blur(1px) opacity(1.2) grayscale(.3);
+}
