@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -9,37 +10,47 @@ body, html {
 }
 
 .block {
-    width: 100%; 
+    width: 100%;
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     border: 1px solid #ccc;
     padding: 20px;
 }
 
 .content {
     width: 50%;
-    text-align: center; 
-    margin: 0 auto; 
+    text-align: center;
+    margin: 0 auto;
 }
 
 img {
-    max-width: 100%; 
+    max-width: 100%;
     width: 240px;
     height: 120px;
 }
 
 .block1 {
     filter: blur(2px) opacity(.7) grayscale(.7);
+    transition: filter 1s ease;
 }
 
-.content{
+.block1:hover {
+    filter: blur(.5px) opacity(1) grayscale(.7);
+}
+
+.content {
     filter: blur(1px) opacity(1.2) grayscale(.3);
+    transition: filter 1s ease;
 }
 
-.block3{
+.content:hover {
+    filter: blur(.2px) opacity(2) grayscale(.2) contrast(150%);
+}
+
+.block3 {
     width: 400px;
     height: 200px;
     display: flex;
@@ -47,4 +58,9 @@ img {
     align-items: center;
     background-color: blueviolet;
     backdrop-filter: blur(60px) opacity(.5) brightness(70%) contrast(300%);
+    transition: filter 1s ease;
+}
+
+.block3:hover{
+    filter: contrast(150%) blur(2px) opacity(2) brightness(.7) saturate(200%);
 }
